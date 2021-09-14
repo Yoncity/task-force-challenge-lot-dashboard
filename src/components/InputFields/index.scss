@@ -1,0 +1,43 @@
+@import "../../style/colors.scss";
+.textfield_container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  label {
+    color: $gray_1;
+  }
+  &__textfield_input {
+    margin: 10px 0 15px 0;
+    border: 1px solid $gray;
+    padding: 15px 20px;
+    border-radius: 5px;
+  }
+  &__password_container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 16px 0;
+    position: relative;
+    input {
+      flex: 1;
+      margin: 0;
+      border: 1px solid $gray;
+      padding: 15px 20px;
+      border-radius: 5px;
+      padding-right: 70px;
+    }
+    span {
+      position: absolute;
+      right: 10px;
+      margin: 0;
+      cursor: pointer;
+      padding: 5px 7px;
+      border-radius: 5px;
+      &:hover {
+        background: #ddd;
+      }
+      &:active {
+        background: #ccc;
+      }
+    }
+  }
+}

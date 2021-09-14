@@ -1,0 +1,11 @@
+@import "./colors.scss";
+@import "./forms.scss";
+@import "./typegraphy.scss";
+* {
+  box-sizing: border-box;
+}
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
