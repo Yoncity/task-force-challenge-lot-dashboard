@@ -1,20 +1,10 @@
-import { useState } from "react";
-import Modal from "../../components/common/Modal";
+import "./index.scss";
+import Layout from "../../components/common/Layout";
 
 const Home = () => {
-  const [showModal, setShowModal] = useState(false);
   return (
-    <div>
-      <h1>Hello there</h1>
-      <button onClick={() => setShowModal(true)}>Show Modal</button>
-
-      <Modal
-        header="Modal Header"
-        children={"Children Come Here"}
-        footer="Footer"
-        showModal={showModal}
-        setShowModal={setShowModal}
-      />
+    <div className="home_container">
+      <Layout activeMenu="Home" headerTitle="Overview"></Layout>
     </div>
   );
 };

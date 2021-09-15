@@ -1,0 +1,24 @@
+.layout_container {
+  display: flex;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    flex: 1;
+    &__section {
+      &__left {
+        position: fixed;
+        height: 100%;
+        width: 60%;
+        overflow: auto;
+      }
+      &__right {
+        position: fixed;
+        width: 20%;
+        height: 100%;
+        right: 0;
+        border-left: 1px solid #ddd;
+      }
+    }
+  }
+}

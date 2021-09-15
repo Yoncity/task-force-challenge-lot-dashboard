@@ -1,0 +1,59 @@
+@import "../../../style/colors.scss";
+
+.sidebar_container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  transition: all 0.3s;
+  &__profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    img {
+      width: 59px;
+      height: 59px;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 1px solid #eee;
+    }
+    &__info {
+      &__minor {
+        color: #080000;
+        opacity: 0.36;
+        margin-top: 3px;
+      }
+    }
+  }
+  &__menu {
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    // margin: 5px 0;
+    cursor: pointer;
+    img {
+      width: 24px;
+      margin: 10px 35px;
+    }
+    &:last-child {
+      margin: auto 0 0 0;
+    }
+  }
+  &.collapse {
+    width: 7%;
+    transition: all 0.3s;
+
+    .icon {
+      margin: 10px auto;
+    }
+    .p_image {
+      margin: 0 auto;
+    }
+    p {
+      display: none;
+    }
+  }
+}

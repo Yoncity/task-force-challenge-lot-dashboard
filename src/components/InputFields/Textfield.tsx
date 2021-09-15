@@ -7,7 +7,7 @@ const Textfield = ({ label, placeholder, inputName }) => {
         {label}
       </label>
       <input
-        className="textfield_container__textfield_input"
+        className="textfield_container__textfield_input typography_content_xs"
         type="text"
         name={inputName}
         placeholder={placeholder}

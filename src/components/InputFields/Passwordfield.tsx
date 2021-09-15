@@ -9,8 +9,17 @@ const Passwordfield = ({ label, inputName }) => {
         {label}
       </label>
       <div className="textfield_container__password_container">
-        <input type={toggleShow ? "text" : "password"} name={inputName} />
-        <span onClick={() => setToggleShow(!toggleShow)}>show</span>
+        <input
+          type={toggleShow ? "text" : "password"}
+          name={inputName}
+          className="typography_content_xs"
+        />
+        <span
+          onClick={() => setToggleShow(!toggleShow)}
+          className={`typography_content_xxs ${toggleShow && "show_password"}`}
+        >
+          show
+        </span>
       </div>
     </div>
   );
