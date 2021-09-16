@@ -5,6 +5,7 @@
 
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 body,
 p {
@@ -12,9 +13,22 @@ p {
   padding: 0;
 }
 
+.card {
+  box-shadow: 0px 2px 2px #3565d329;
+  border: 1px solid #0074890d;
+  border-radius: 8px;
+}
+
 .button_filled {
   background: $primary;
   border-radius: 8px;
   padding: 15px 25px;
   text-align: center;
+  cursor: pointer;
+  &.smaller {
+    padding: 10px 25px;
+  }
+  &.larger {
+    padding: 15px 45px;
+  }
 }

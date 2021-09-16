@@ -4,8 +4,10 @@ import imageDesk from "../../assets/images/desk.jpg";
 import Textfield from "../../components/InputFields/Textfield";
 import Passwordfield from "../../components/InputFields/Passwordfield";
 import google_icon from "../../assets/icons/google_icon.png";
+import { useState } from "react";
 
 const Auth = () => {
+  const [tab, setTab] = useState(0);
   const createAccount = () => {
     return (
       <div className="auth_container__right__form_container">
@@ -59,7 +61,9 @@ const Auth = () => {
 
           <p className="auth_container__right__form_container__body__signin typography_content_xs gray_text_5">
             Already Have An Account?
-            <span className="primary_text"> Signin</span>
+            <span className="primary_text" onClick={() => setTab(1)}>
+              Signin
+            </span>
           </p>
         </div>
       </div>
@@ -98,7 +102,9 @@ const Auth = () => {
 
           <p className="auth_container__right__form_container__body__signin typography_content_xs gray_text_5">
             Don’t Have An Account?
-            <span className="primary_text"> Signup</span>
+            <span className="primary_text" onClick={() => setTab(0)}>
+              Signup
+            </span>
           </p>
         </div>
       </div>
@@ -118,7 +124,9 @@ const Auth = () => {
           “Let the countdown begin”
         </p>
       </div>
-      <div className="auth_container__right">{login()}</div>
+      <div className="auth_container__right">
+        {tab === 0 ? createAccount() : login()}
+      </div>
     </div>
   );
 };

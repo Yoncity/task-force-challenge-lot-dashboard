@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./index.scss";
+import { Link } from "react-router-dom";
 import ME from "../../../assets/images/ME.jpg";
 import homeIcon from "../../../assets/icons/home.svg";
 import calendarIcon from "../../../assets/icons/calendar.svg";
@@ -8,11 +9,9 @@ import articleIcon from "../../../assets/icons/article.svg";
 import settingsIcon from "../../../assets/icons/settings.svg";
 // import homeIcon from "../../../assets/icons/home.svg";
 
-const Sidebar = ({ active }) => {
-  const [collapse, setCollapse] = useState(false);
-
+const Sidebar = ({ active, collapse, setCollapse }) => {
   const isActiveBackground = (current, active) => {
-    return current === active && "background_primary";
+    return current === active && "background_primary active";
   };
 
   const isActiveText = (current, active) => {
@@ -36,89 +35,98 @@ const Sidebar = ({ active }) => {
           </p>
         </div>
       </div>
-      <div
-        className={`sidebar_container__menu ${isActiveBackground(
-          active,
-          "Home"
-        )}`}
-      >
-        <img
-          src={homeIcon}
-          alt=""
-          className="sidebar_container__menu__icon icon"
-        />
-        <p
-          className={`sidebar_container__menu__title typography_content_medium ${isActiveText(
+
+      <Link to="/staff">
+        <div
+          className={`sidebar_container__menu ${isActiveBackground(
             active,
             "Home"
-          )} `}
+          )}`}
         >
-          Home
-        </p>
-      </div>
+          <img
+            src={homeIcon}
+            alt=""
+            className="sidebar_container__menu__icon icon"
+          />
+          <p
+            className={`sidebar_container__menu__title typography_content_medium ${isActiveText(
+              active,
+              "Home"
+            )} `}
+          >
+            Home
+          </p>
+        </div>
+      </Link>
 
-      <div
-        className={`sidebar_container__menu ${isActiveBackground(
-          active,
-          "Appointments"
-        )}`}
-      >
-        <img
-          src={calendarIcon}
-          alt=""
-          className="sidebar_container__menu__icon icon"
-        />
-        <p
-          className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+      <Link to="/appointments">
+        <div
+          className={`sidebar_container__menu ${isActiveBackground(
             active,
             "Appointments"
           )}`}
         >
-          Appointments
-        </p>
-      </div>
+          <img
+            src={calendarIcon}
+            alt=""
+            className="sidebar_container__menu__icon icon"
+          />
+          <p
+            className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+              active,
+              "Appointments"
+            )}`}
+          >
+            Appointments
+          </p>
+        </div>
+      </Link>
 
-      <div
-        className={`sidebar_container__menu ${isActiveBackground(
-          active,
-          "Staffs"
-        )}`}
-      >
-        <img
-          src={userIcon}
-          alt=""
-          className="sidebar_container__menu__icon icon"
-        />
-        <p
-          className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+      <Link to="/staff">
+        <div
+          className={`sidebar_container__menu ${isActiveBackground(
             active,
             "Staffs"
           )}`}
         >
-          Staffs
-        </p>
-      </div>
+          <img
+            src={userIcon}
+            alt=""
+            className="sidebar_container__menu__icon icon"
+          />
+          <p
+            className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+              active,
+              "Staffs"
+            )}`}
+          >
+            Staffs
+          </p>
+        </div>
+      </Link>
 
-      <div
-        className={`sidebar_container__menu ${isActiveBackground(
-          active,
-          "Reports"
-        )}`}
-      >
-        <img
-          src={articleIcon}
-          alt=""
-          className="sidebar_container__menu__icon icon"
-        />
-        <p
-          className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+      <Link to="/report">
+        <div
+          className={`sidebar_container__menu ${isActiveBackground(
             active,
             "Reports"
           )}`}
         >
-          Reports
-        </p>
-      </div>
+          <img
+            src={articleIcon}
+            alt=""
+            className="sidebar_container__menu__icon icon"
+          />
+          <p
+            className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+              active,
+              "Reports"
+            )}`}
+          >
+            Reports
+          </p>
+        </div>
+      </Link>
 
       <div
         className={`sidebar_container__menu ${isActiveBackground(

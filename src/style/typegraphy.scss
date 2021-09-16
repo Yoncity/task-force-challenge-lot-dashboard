@@ -1,7 +1,7 @@
 @import "./colors.scss";
 
 .typography_title_h1 {
-  font-size: 40px;
+  font-size: 70px;
   font-weight: bold;
 }
 .typography_title_h2 {
@@ -9,15 +9,28 @@
   font-weight: bold;
 }
 .typography_title_h3 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: bold;
 }
+// .typography_title_h3 {
+//   font-size: 40px;
+//   font-weight: bold;
+// }
 
 .typography_content_large {
   font-size: 20px;
 }
+.typography_content_large_2 {
+  font-size: 25px;
+}
+.typography_content_large_3 {
+  font-size: 19px;
+}
 .typography_content_medium {
   font-size: 18px;
+}
+.typography_content_medium_2 {
+  font-size: 17px;
 }
 .typography_content_small {
   font-size: 16px;
@@ -28,11 +41,26 @@
 .typography_content_xxs {
   font-size: 14px;
 }
+.typography_content_xss {
+  font-size: 13px;
+}
 .typography_content_xxss {
   font-size: 12px;
 }
 .primary_text {
   color: $primary;
+}
+.primary_text_1 {
+  color: $primary_1;
+}
+.primary_text_2 {
+  color: $primary_2;
+}
+.primary_text_3 {
+  color: $primary_3;
+}
+.secondary_text {
+  color: $secondary;
 }
 .red_text {
   color: $red;
@@ -42,6 +70,12 @@
 }
 .black_text {
   color: $black;
+}
+.black_text_1 {
+  color: $black_1;
+}
+.black_text_2 {
+  color: $black_2;
 }
 .gray_text {
   color: $gray;
@@ -60,4 +94,7 @@
 }
 .gray_text_5 {
   color: $gray_5;
+}
+.gray_text_7 {
+  color: $gray_7;
 }

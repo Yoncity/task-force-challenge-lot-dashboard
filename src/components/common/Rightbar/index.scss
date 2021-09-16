@@ -1,7 +1,31 @@
 .rightbar_container {
-  // padding: 20px 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow: auto;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  &__body {
+    &__row {
+      display: flex;
+      padding: 15px 20px;
+      justify-content: space-between;
+      margin: 20px 0;
+      &__icon {
+      }
+      &__info {
+        flex: 1;
+        margin: 0 15px;
+
+        &__minor {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
 }
