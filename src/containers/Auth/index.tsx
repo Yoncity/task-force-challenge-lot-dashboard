@@ -1,10 +1,10 @@
-import "./index.scss";
-import logo from "../../assets/icons/logo.svg";
-import imageDesk from "../../assets/images/desk.jpg";
-import Textfield from "../../components/InputFields/Textfield";
-import Passwordfield from "../../components/InputFields/Passwordfield";
-import google_icon from "../../assets/icons/google_icon.png";
-import { useState } from "react";
+import './index.scss';
+import logo from '../../assets/icons/logo.svg';
+import imageDesk from '../../assets/images/desk.jpg';
+import Textfield from '../../components/InputFields/Textfield';
+import Passwordfield from '../../components/InputFields/Passwordfield';
+import google_icon from '../../assets/icons/google_icon.png';
+import { useState } from 'react';
 
 const Auth = () => {
   const [tab, setTab] = useState(0);
@@ -65,7 +65,7 @@ const Auth = () => {
           </div>
 
           <p className="auth_container__right__form_container__body__signin typography_content_xs poppin_regular gray_text_5">
-            Already Have An Account?{" "}
+            Already Have An Account?{' '}
             <span
               className="poppin_medium primary_text"
               onClick={() => setTab(1)}
@@ -109,7 +109,7 @@ const Auth = () => {
           </div>
 
           <p className="auth_container__right__form_container__body__signin typography_content_xs poppin_regular gray_text_5">
-            Don’t Have An Account?{" "}
+            Don’t Have An Account?{' '}
             <span
               className="poppin_medium primary_text"
               onClick={() => setTab(0)}

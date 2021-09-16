@@ -1,6 +1,6 @@
-import "./index.scss";
-import Layout from "../../components/common/Layout";
-import settings from "../../assets/icons/settings.svg";
+import './index.scss';
+import Layout from '../../components/common/Layout';
+import settings from '../../assets/icons/settings.svg';
 
 const Report = () => {
   return (

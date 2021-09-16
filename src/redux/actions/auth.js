@@ -1,4 +1,4 @@
-import * as types from "../actionTypes/auth";
+import * as types from '../actionTypes/auth';
 
 const authStarted = () => ({
   type: types.AUTH_START,
@@ -12,7 +12,7 @@ const authError = (error) => ({
   payload: { error },
 });
 
-const authenticate = (data) => async (dispatch) => {
+const authenticate = () => async () => {
   authStarted();
 
   try {

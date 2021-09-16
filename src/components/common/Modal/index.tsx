@@ -1,5 +1,6 @@
-import { useEffect, useRef } from "react";
-import "./index.scss";
+import React from 'react';
+import { useEffect, useRef } from 'react';
+import './index.scss';
 type Props = {
   header: string;
   children: any;
@@ -20,16 +21,16 @@ const Modal: React.FC<Props> = ({
     const handleClickOutside = (event) => {
       // @ts-ignore
       if (ref.current && !ref.current.contains(event.target)) {
-        console.log("Ola");
+        console.log('Ola');
         setShowModal(false);
       }
     };
 
     // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
       // Unbind the event listener on clean up
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [ref, setShowModal]);
 

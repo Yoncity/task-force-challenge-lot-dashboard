@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "./index.scss";
+import { useState } from 'react';
+import './index.scss';
 
 const Passwordfield = ({ label, inputName }) => {
   const [toggleShow, setToggleShow] = useState(false);
@@ -13,14 +13,14 @@ const Passwordfield = ({ label, inputName }) => {
       </label>
       <div className="textfield_container__password_container">
         <input
-          type={toggleShow ? "text" : "password"}
+          type={toggleShow ? 'text' : 'password'}
           name={inputName}
           className="typography_content_xs"
         />
         <span
           onClick={() => setToggleShow(!toggleShow)}
           className={`typography_content_xxs poppin_regular ${
-            toggleShow && "show_password"
+            toggleShow && 'show_password'
           }`}
         >
           show

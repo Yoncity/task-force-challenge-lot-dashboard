@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./containers/Home";
-import Appointment from "./containers/Appointment";
-import Staff from "./containers/Staff";
-import Report from "./containers/Report";
-import Auth from "./containers/Auth";
-import Error from "./components/Error";
-import locale from "./locale";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './containers/Home';
+import Appointment from './containers/Appointment';
+import Staff from './containers/Staff';
+import Report from './containers/Report';
+import Auth from './containers/Auth';
+import Error from './components/Error';
+import locale from './locale';
 
 const App = () => {
   return (
