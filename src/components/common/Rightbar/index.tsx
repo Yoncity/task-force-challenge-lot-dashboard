@@ -1,9 +1,9 @@
-import "./index.scss";
-import apartment from "../../../assets/icons/apartment.svg";
-import more_menu from "../../../assets/icons/more_menu.svg";
-import people from "../../../assets/icons/people.svg";
-import left from "../../../assets/icons/left_gray.svg";
-import right from "../../../assets/icons/right_gray.svg";
+import './index.scss';
+import apartment from '../../../assets/icons/apartment.svg';
+import more_menu from '../../../assets/icons/more_menu.svg';
+import people from '../../../assets/icons/people.svg';
+import left from '../../../assets/icons/left_gray.svg';
+import right from '../../../assets/icons/right_gray.svg';
 
 const Rightbar = () => {
   return (

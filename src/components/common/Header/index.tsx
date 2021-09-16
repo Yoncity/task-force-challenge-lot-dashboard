@@ -1,7 +1,7 @@
-import "./index.scss";
-import search from "../../../assets/icons/search.svg";
-import moon from "../../../assets/icons/moon.svg";
-import logout from "../../../assets/icons/logout.svg";
+import './index.scss';
+import search from '../../../assets/icons/search.svg';
+import moon from '../../../assets/icons/moon.svg';
+import logout from '../../../assets/icons/logout.svg';
 
 const Header = ({ title }) => {
   return (

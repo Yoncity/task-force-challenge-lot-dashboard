@@ -1,9 +1,9 @@
-import "./index.scss";
-import Layout from "../../components/common/Layout";
-import people from "../../assets/icons/people.svg";
-import apartment from "../../assets/icons/apartment.svg";
-import more_menu from "../../assets/icons/more_menu.svg";
-import Calendar from "react-calendar";
+import './index.scss';
+import Layout from '../../components/common/Layout';
+import people from '../../assets/icons/people.svg';
+import apartment from '../../assets/icons/apartment.svg';
+import more_menu from '../../assets/icons/more_menu.svg';
+import Calendar from 'react-calendar';
 // import "react-calendar/dist/Calendar.css";
 
 const Appointments = () => {

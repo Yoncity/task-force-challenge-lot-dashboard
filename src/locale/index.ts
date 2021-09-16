@@ -3,7 +3,7 @@ export type Locales = {
 };
 
 const eng: Locales = {
-  pageNotFound: "Page Not Found",
+  pageNotFound: 'Page Not Found',
 };
 
 export default { eng };

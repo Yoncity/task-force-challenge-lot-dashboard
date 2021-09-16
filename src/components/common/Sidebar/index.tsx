@@ -167,7 +167,9 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
           className="sidebar_container__menu__icon icon"
         />
         <p
-          className={`sidebar_container__menu__title euclid_medium typography_content_medium primary_text`}
+          className={
+            'sidebar_container__menu__title euclid_medium typography_content_medium primary_text'
+          }
         >
           Hide
         </p>

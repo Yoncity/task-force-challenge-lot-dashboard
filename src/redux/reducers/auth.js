@@ -1,5 +1,5 @@
-import * as types from "../actionTypes/auth";
-import initialState from "../initialState";
+import * as types from '../actionTypes/auth';
+import initialState from '../initialState';
 
 const authenticate = (state = initialState.auth, { type, payload }) => {
   switch (type) {
