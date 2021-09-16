@@ -1,4 +1,4 @@
-# Frontend-Template v2
+# LoT Dashboard v1.0
 
 This project is bootstrapped with cra-template with Typscript template.
 

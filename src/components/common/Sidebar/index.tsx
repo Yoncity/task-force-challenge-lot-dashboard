@@ -1,31 +1,30 @@
-import { useState } from "react";
-import "./index.scss";
-import { Link } from "react-router-dom";
-import ME from "../../../assets/images/ME.jpg";
-import homeIcon from "../../../assets/icons/home.svg";
-import homeIcon_active from "../../../assets/icons/home_white.svg";
-import calendarIcon from "../../../assets/icons/calendar.svg";
-import calendarIcon_white from "../../../assets/icons/calendar_white.svg";
-import userIcon from "../../../assets/icons/user.svg";
-import userIcon_white from "../../../assets/icons/user_white.svg";
-import articleIcon from "../../../assets/icons/article.svg";
-import articleIcon_white from "../../../assets/icons/article_white.svg";
-import left from "../../../assets/icons/left.svg";
-import right from "../../../assets/icons/right.svg";
-import settingsIcon from "../../../assets/icons/settings.svg";
+import './index.scss';
+import { Link } from 'react-router-dom';
+import ME from '../../../assets/images/ME.jpg';
+import homeIcon from '../../../assets/icons/home.svg';
+import homeIcon_active from '../../../assets/icons/home_white.svg';
+import calendarIcon from '../../../assets/icons/calendar.svg';
+import calendarIcon_white from '../../../assets/icons/calendar_white.svg';
+import userIcon from '../../../assets/icons/user.svg';
+import userIcon_white from '../../../assets/icons/user_white.svg';
+import articleIcon from '../../../assets/icons/article.svg';
+import articleIcon_white from '../../../assets/icons/article_white.svg';
+import left from '../../../assets/icons/left.svg';
+import right from '../../../assets/icons/right.svg';
+import settingsIcon from '../../../assets/icons/settings.svg';
 // import homeIcon from "../../../assets/icons/home.svg";
 
 const Sidebar = ({ active, collapse, setCollapse }) => {
   const isActiveBackground = (current, active) => {
-    return current === active && "background_primary active";
+    return current === active && 'background_primary active';
   };
 
   const isActiveText = (current, active) => {
-    return current === active ? "white_text" : "primary_text";
+    return current === active ? 'white_text' : 'primary_text';
   };
 
   return (
-    <div className={`sidebar_container ${collapse && "collapse"}`}>
+    <div className={`sidebar_container ${collapse && 'collapse'}`}>
       <div className="sidebar_container__profile">
         <img
           src={ME}
@@ -46,18 +45,18 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
         <div
           className={`sidebar_container__menu ${isActiveBackground(
             active,
-            "Home"
+            'Home',
           )}`}
         >
           <img
-            src={active === "Home" ? homeIcon_active : homeIcon}
+            src={active === 'Home' ? homeIcon_active : homeIcon}
             alt=""
             className="sidebar_container__menu__icon icon"
           />
           <p
             className={`sidebar_container__menu__title euclid_medium typography_content_medium ${isActiveText(
               active,
-              "Home"
+              'Home',
             )} `}
           >
             Home
@@ -69,18 +68,18 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
         <div
           className={`sidebar_container__menu ${isActiveBackground(
             active,
-            "Appointments"
+            'Appointments',
           )}`}
         >
           <img
-            src={active === "Appointments" ? calendarIcon_white : calendarIcon}
+            src={active === 'Appointments' ? calendarIcon_white : calendarIcon}
             alt=""
             className="sidebar_container__menu__icon icon"
           />
           <p
             className={`sidebar_container__menu__title euclid_medium typography_content_medium  ${isActiveText(
               active,
-              "Appointments"
+              'Appointments',
             )}`}
           >
             Appointments
@@ -92,18 +91,18 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
         <div
           className={`sidebar_container__menu ${isActiveBackground(
             active,
-            "Staffs"
+            'Staffs',
           )}`}
         >
           <img
-            src={active === "Staffs" ? userIcon_white : userIcon}
+            src={active === 'Staffs' ? userIcon_white : userIcon}
             alt=""
             className="sidebar_container__menu__icon icon"
           />
           <p
             className={`sidebar_container__menu__title euclid_medium typography_content_medium  ${isActiveText(
               active,
-              "Staffs"
+              'Staffs',
             )}`}
           >
             Staffs
@@ -115,18 +114,18 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
         <div
           className={`sidebar_container__menu ${isActiveBackground(
             active,
-            "Reports"
+            'Reports',
           )}`}
         >
           <img
-            src={active === "Reports" ? articleIcon_white : articleIcon}
+            src={active === 'Reports' ? articleIcon_white : articleIcon}
             alt=""
             className="sidebar_container__menu__icon icon"
           />
           <p
             className={`sidebar_container__menu__title euclid_medium typography_content_medium  ${isActiveText(
               active,
-              "Reports"
+              'Reports',
             )}`}
           >
             Reports
@@ -137,7 +136,7 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
       <div
         className={`sidebar_container__menu ${isActiveBackground(
           active,
-          "Settings"
+          'Settings',
         )}`}
       >
         <img
@@ -148,7 +147,7 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
         <p
           className={`sidebar_container__menu__title euclid_medium typography_content_medium  ${isActiveText(
             active,
-            "Settings"
+            'Settings',
           )}`}
         >
           Settings
@@ -158,7 +157,7 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
       <div
         className={`sidebar_container__menu ${isActiveBackground(
           active,
-          "home"
+          'home',
         )}`}
         onClick={() => setCollapse(!collapse)}
       >

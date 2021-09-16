@@ -1,16 +1,17 @@
-import { useState } from "react";
-import ReactStars from "react-rating-stars-component";
-import "./index.scss";
-import Layout from "../../components/common/Layout";
-import mtn from "../../assets/icons/mtn_round.png";
-import bk from "../../assets/icons/bk.png";
-import kcb from "../../assets/icons/kcb.png";
-import equity from "../../assets/icons/equity-bank-logo.png";
-import userProfileIcon from "../../assets/icons/user_profile.svg";
-import camera from "../../assets/icons/camera.svg";
-import edit from "../../assets/icons/edit.svg";
-import deleteIcon from "../../assets/icons/delete.svg";
-import Modal from "../../components/common/Modal";
+import { useState } from 'react';
+import ReactStars from 'react-rating-stars-component';
+import './index.scss';
+import Layout from '../../components/common/Layout';
+import mtn from '../../assets/icons/mtn_round.png';
+import ME from '../../assets/images/ME.jpg';
+import bk from '../../assets/icons/bk.png';
+import kcb from '../../assets/icons/kcb.png';
+import equity from '../../assets/icons/equity-bank-logo.png';
+import userProfileIcon from '../../assets/icons/user_profile.svg';
+import camera from '../../assets/icons/camera.svg';
+import edit from '../../assets/icons/edit.svg';
+import deleteIcon from '../../assets/icons/delete.svg';
+import Modal from '../../components/common/Modal';
 
 const Staff = () => {
   const [tab, setTab] = useState(0);
@@ -136,28 +137,74 @@ const Staff = () => {
 
   const employees = () => {
     return (
-      <div className="staff_container__body__card card">
-        <img src={mtn} alt="" className="staff_container__body__card__icon" />
-        <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
-          Kamikazi Lilian
-        </p>
+      <>
+        <div className="staff_container__body__card card">
+          <img src={ME} alt="" className="staff_container__body__card__icon" />
+          <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
+            Kamikazi Lilian
+          </p>
 
-        <p className="staff_container__body__card__rate_button_employee poppin_semi_bold typography_content_large_3 primary_text">
-          Rate
-        </p>
-        <div className="staff_container__body__card__actions">
-          <img
-            src={edit}
-            alt=""
-            className="staff_container__body__card__actions__icon"
-          />
-          <img
-            src={deleteIcon}
-            alt=""
-            className="staff_container__body__card__actions__icon"
-          />
+          <p className="staff_container__body__card__rate_button_employee poppin_semi_bold typography_content_large_3 primary_text">
+            Rate
+          </p>
+          <div className="staff_container__body__card__actions">
+            <img
+              src={edit}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+            <img
+              src={deleteIcon}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+          </div>
         </div>
-      </div>
+        <div className="staff_container__body__card card">
+          <img src={ME} alt="" className="staff_container__body__card__icon" />
+          <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
+            Kamikazi Lilian
+          </p>
+
+          <p className="staff_container__body__card__rate_button_employee poppin_semi_bold typography_content_large_3 primary_text">
+            Rate
+          </p>
+          <div className="staff_container__body__card__actions">
+            <img
+              src={edit}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+            <img
+              src={deleteIcon}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+          </div>
+        </div>
+        <div className="staff_container__body__card card">
+          <img src={ME} alt="" className="staff_container__body__card__icon" />
+          <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
+            Kamikazi Lilian
+          </p>
+
+          <p className="staff_container__body__card__rate_button_employee poppin_semi_bold typography_content_large_3 primary_text">
+            Rate
+          </p>
+          <div className="staff_container__body__card__actions">
+            <img
+              src={edit}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+            <img
+              src={deleteIcon}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+          </div>
+        </div>
+      </>
     );
   };
 
@@ -169,7 +216,7 @@ const Staff = () => {
             <p
               onClick={() => setTab(0)}
               className={`typography_content_medium_2 poppin_medium primary_text_1 ${
-                tab === 0 ? "background_white" : ""
+                tab === 0 ? 'background_white' : ''
               }`}
             >
               Employers
@@ -177,7 +224,7 @@ const Staff = () => {
             <p
               onClick={() => setTab(1)}
               className={`typography_content_medium_2 poppin_medium primary_text_1 ${
-                tab === 1 ? "background_white" : ""
+                tab === 1 ? 'background_white' : ''
               }`}
             >
               Employees
@@ -202,8 +249,16 @@ const Staff = () => {
       >
         <div className="modal">
           <div className="add_employee_image_container">
-            <img src={userProfileIcon} className="employee_image" />
-            <img src={camera} className="add_image" />
+            <img
+              src={userProfileIcon}
+              alt="User Profile Avatar"
+              className="employee_image"
+            />
+            <img
+              src={camera}
+              alt="Button for adding new profile"
+              className="add_image"
+            />
           </div>
 
           <input

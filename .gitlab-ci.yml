@@ -1,0 +1,29 @@
+image: node:15.12.0
+
+stages:
+  - install
+  - build
+  - lint
+
+install_dependencies:
+  stage: install
+  script:
+    - npm run start
+  artifacts:
+    paths:
+      - node_modules/
+  only:
+    - merge_requests
+
+build:
+  stage: build
+  script:
+    - npm run build
+  only:
+    - merge_requests
+# lint_check:
+#   stage: lint
+#   script:
+#     - npm run lint
+#   only:
+#     - merge_requests

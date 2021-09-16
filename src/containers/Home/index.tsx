@@ -32,6 +32,9 @@ const Home = () => {
           Welcome to <span className="euclid_medium">Lot,</span>
         </p>
         <div className="home_container__graph">
+          <p className="typography_content_large gray_text_9 poppin_medium">
+            Success Map
+          </p>
           <LineChart width={700} height={400} data={data}>
             <XAxis dataKey="name" />
             <YAxis />
