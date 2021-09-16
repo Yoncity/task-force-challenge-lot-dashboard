@@ -3,9 +3,15 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import ME from "../../../assets/images/ME.jpg";
 import homeIcon from "../../../assets/icons/home.svg";
+import homeIcon_active from "../../../assets/icons/home_white.svg";
 import calendarIcon from "../../../assets/icons/calendar.svg";
+import calendarIcon_white from "../../../assets/icons/calendar_white.svg";
 import userIcon from "../../../assets/icons/user.svg";
+import userIcon_white from "../../../assets/icons/user_white.svg";
 import articleIcon from "../../../assets/icons/article.svg";
+import articleIcon_white from "../../../assets/icons/article_white.svg";
+import left from "../../../assets/icons/left.svg";
+import right from "../../../assets/icons/right.svg";
 import settingsIcon from "../../../assets/icons/settings.svg";
 // import homeIcon from "../../../assets/icons/home.svg";
 
@@ -27,16 +33,16 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
           className="sidebar_container__profile_image p_image"
         />
         <div className="sidebar_container__profile__info">
-          <p className="sidebar_container__profile__info__main typography_content_medium">
+          <p className="sidebar_container__profile__info__main typography_content_medium euclid_medium">
             Yonatan Dawit
           </p>
-          <p className="sidebar_container__profile__info__minor typography_content_xxss">
+          <p className="sidebar_container__profile__info__minor typography_content_xxss euclid_regular">
             Yoncity
           </p>
         </div>
       </div>
 
-      <Link to="/staff">
+      <Link to="/">
         <div
           className={`sidebar_container__menu ${isActiveBackground(
             active,
@@ -44,12 +50,12 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
           )}`}
         >
           <img
-            src={homeIcon}
+            src={active === "Home" ? homeIcon_active : homeIcon}
             alt=""
             className="sidebar_container__menu__icon icon"
           />
           <p
-            className={`sidebar_container__menu__title typography_content_medium ${isActiveText(
+            className={`sidebar_container__menu__title euclid_medium typography_content_medium ${isActiveText(
               active,
               "Home"
             )} `}
@@ -67,12 +73,12 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
           )}`}
         >
           <img
-            src={calendarIcon}
+            src={active === "Appointments" ? calendarIcon_white : calendarIcon}
             alt=""
             className="sidebar_container__menu__icon icon"
           />
           <p
-            className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+            className={`sidebar_container__menu__title euclid_medium typography_content_medium  ${isActiveText(
               active,
               "Appointments"
             )}`}
@@ -90,12 +96,12 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
           )}`}
         >
           <img
-            src={userIcon}
+            src={active === "Staffs" ? userIcon_white : userIcon}
             alt=""
             className="sidebar_container__menu__icon icon"
           />
           <p
-            className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+            className={`sidebar_container__menu__title euclid_medium typography_content_medium  ${isActiveText(
               active,
               "Staffs"
             )}`}
@@ -113,12 +119,12 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
           )}`}
         >
           <img
-            src={articleIcon}
+            src={active === "Reports" ? articleIcon_white : articleIcon}
             alt=""
             className="sidebar_container__menu__icon icon"
           />
           <p
-            className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+            className={`sidebar_container__menu__title euclid_medium typography_content_medium  ${isActiveText(
               active,
               "Reports"
             )}`}
@@ -140,7 +146,7 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
           className="sidebar_container__menu__icon icon"
         />
         <p
-          className={`sidebar_container__menu__title typography_content_medium  ${isActiveText(
+          className={`sidebar_container__menu__title euclid_medium typography_content_medium  ${isActiveText(
             active,
             "Settings"
           )}`}
@@ -157,12 +163,12 @@ const Sidebar = ({ active, collapse, setCollapse }) => {
         onClick={() => setCollapse(!collapse)}
       >
         <img
-          src={settingsIcon}
+          src={collapse ? right : left}
           alt=""
           className="sidebar_container__menu__icon icon"
         />
         <p
-          className={`sidebar_container__menu__title typography_content_medium primary_text`}
+          className={`sidebar_container__menu__title euclid_medium typography_content_medium primary_text`}
         >
           Hide
         </p>

@@ -7,14 +7,14 @@ const Report = () => {
     <Layout activeMenu="Reports" headerTitle="Reports">
       <div className="report_container">
         <div className="report_container__header">
-          <p className="report_container__header__title typography_title_h3">
+          <p className="report_container__header__title typography_title_h3 euclid_regular">
             Students rate
           </p>
           <div className="report_container__header__date_range">
             <div className="report_container__header__date_range__range">
               <label
                 htmlFor="fromDate"
-                className="typography_content_xxs primary_text"
+                className="typography_content_xxs poppin_semi_bold primary_text"
               >
                 From
               </label>
@@ -24,7 +24,7 @@ const Report = () => {
             <div className="report_container__header__date_range__range">
               <label
                 htmlFor="fromDate"
-                className="typography_content_xxs primary_text"
+                className="typography_content_xxs poppin_semi_bold primary_text"
               >
                 To
               </label>
@@ -36,16 +36,16 @@ const Report = () => {
         <div className="report_container__body">
           <table cellPadding="15" cellSpacing="0">
             <tr>
-              <th className="background_gray_8 primary_text typography_content_xxs">
+              <th className="background_gray_8 poppin_semi_bold primary_text typography_content_xxs">
                 STUDENTS
               </th>
-              <th className="background_gray_8 primary_text typography_content_xxs">
+              <th className="background_gray_8 poppin_semi_bold primary_text typography_content_xxs">
                 COMPANIES
               </th>
-              <th className="background_gray_8 primary_text typography_content_xxs">
+              <th className="background_gray_8 poppin_semi_bold primary_text typography_content_xxs">
                 DATE JOINED
               </th>
-              <th className="background_gray_8 primary_text typography_content_xxs">
+              <th className="background_gray_8 poppin_semi_bold primary_text typography_content_xxs">
                 SERVICE FEE
               </th>
             </tr>
@@ -53,13 +53,13 @@ const Report = () => {
             <tr>
               <td className="id_and_name">
                 <div>
-                  <p className="row_id typography_content_xxs">1</p>
+                  <p className="row_id poppin_bold typography_content_xxs">1</p>
                 </div>
                 <div className="row_name_and_email">
-                  <p className="row_name primary_text typography_content_xxs primary_text_3">
+                  <p className="row_name primary_text poppin_regular typography_content_xxs primary_text_3">
                     Kamikazi Lilian
                   </p>
-                  <p className="row_email primary_text typography_content_xxss primary_text_2">
+                  <p className="row_email primary_text poppin_regular typography_content_xxss primary_text_2">
                     kamikaziLili@gmail.com
                   </p>
                 </div>
@@ -67,19 +67,19 @@ const Report = () => {
 
               <td className="company_info">
                 <img src={settings} alt="" className="row_image" />
-                <p className="row_company_name typography_content_xxs primary_text">
+                <p className="row_company_name poppin_regular typography_content_xxs primary_text">
                   MTN Rwanda
                 </p>
               </td>
 
               <td>
-                <p className="row_date_joined typography_content_xxs primary_text_2">
+                <p className="row_date_joined poppin_regular typography_content_xxs primary_text_2">
                   1st JUNE 2021
                 </p>
               </td>
 
               <td>
-                <p className="row_service_fee typography_content_xxs primary_text">
+                <p className="row_service_fee poppin_bold typography_content_xxs primary_text">
                   PAID
                 </p>
               </td>
@@ -88,13 +88,13 @@ const Report = () => {
             <tr>
               <td className="id_and_name">
                 <div>
-                  <p className="row_id typography_content_xxs">1</p>
+                  <p className="row_id poppin_bold typography_content_xxs">1</p>
                 </div>
                 <div className="row_name_and_email">
-                  <p className="row_name primary_text typography_content_xxs primary_text_3">
+                  <p className="row_name primary_text poppin_regular typography_content_xxs primary_text_3">
                     Kamikazi Lilian
                   </p>
-                  <p className="row_email primary_text typography_content_xxss primary_text_2">
+                  <p className="row_email primary_text poppin_regular typography_content_xxss primary_text_2">
                     kamikaziLili@gmail.com
                   </p>
                 </div>
@@ -102,19 +102,19 @@ const Report = () => {
 
               <td className="company_info">
                 <img src={settings} alt="" className="row_image" />
-                <p className="row_company_name typography_content_xxs primary_text">
+                <p className="row_company_name poppin_regular typography_content_xxs primary_text">
                   MTN Rwanda
                 </p>
               </td>
 
               <td>
-                <p className="row_date_joined typography_content_xxs primary_text_2">
+                <p className="row_date_joined poppin_regular typography_content_xxs primary_text_2">
                   1st JUNE 2021
                 </p>
               </td>
 
               <td>
-                <p className="row_service_fee typography_content_xxs primary_text">
+                <p className="row_service_fee poppin_bold typography_content_xxs primary_text">
                   PAID
                 </p>
               </td>
@@ -123,13 +123,13 @@ const Report = () => {
             <tr>
               <td className="id_and_name">
                 <div>
-                  <p className="row_id typography_content_xxs">1</p>
+                  <p className="row_id poppin_bold typography_content_xxs">1</p>
                 </div>
                 <div className="row_name_and_email">
-                  <p className="row_name primary_text typography_content_xxs primary_text_3">
+                  <p className="row_name primary_text poppin_regular typography_content_xxs primary_text_3">
                     Kamikazi Lilian
                   </p>
-                  <p className="row_email primary_text typography_content_xxss primary_text_2">
+                  <p className="row_email primary_text poppin_regular typography_content_xxss primary_text_2">
                     kamikaziLili@gmail.com
                   </p>
                 </div>
@@ -137,19 +137,19 @@ const Report = () => {
 
               <td className="company_info">
                 <img src={settings} alt="" className="row_image" />
-                <p className="row_company_name typography_content_xxs primary_text">
+                <p className="row_company_name poppin_regular typography_content_xxs primary_text">
                   MTN Rwanda
                 </p>
               </td>
 
               <td>
-                <p className="row_date_joined typography_content_xxs primary_text_2">
+                <p className="row_date_joined poppin_regular typography_content_xxs primary_text_2">
                   1st JUNE 2021
                 </p>
               </td>
 
               <td>
-                <p className="row_service_fee typography_content_xxs primary_text">
+                <p className="row_service_fee poppin_bold typography_content_xxs primary_text">
                   PAID
                 </p>
               </td>
@@ -158,13 +158,13 @@ const Report = () => {
             <tr>
               <td className="id_and_name">
                 <div>
-                  <p className="row_id typography_content_xxs">1</p>
+                  <p className="row_id poppin_bold typography_content_xxs">1</p>
                 </div>
                 <div className="row_name_and_email">
-                  <p className="row_name primary_text typography_content_xxs primary_text_3">
+                  <p className="row_name primary_text poppin_regular typography_content_xxs primary_text_3">
                     Kamikazi Lilian
                   </p>
-                  <p className="row_email primary_text typography_content_xxss primary_text_2">
+                  <p className="row_email primary_text poppin_regular typography_content_xxss primary_text_2">
                     kamikaziLili@gmail.com
                   </p>
                 </div>
@@ -172,19 +172,19 @@ const Report = () => {
 
               <td className="company_info">
                 <img src={settings} alt="" className="row_image" />
-                <p className="row_company_name typography_content_xxs primary_text">
+                <p className="row_company_name poppin_regular typography_content_xxs primary_text">
                   MTN Rwanda
                 </p>
               </td>
 
               <td>
-                <p className="row_date_joined typography_content_xxs primary_text_2">
+                <p className="row_date_joined poppin_regular typography_content_xxs primary_text_2">
                   1st JUNE 2021
                 </p>
               </td>
 
               <td>
-                <p className="row_service_fee typography_content_xxs primary_text">
+                <p className="row_service_fee poppin_bold typography_content_xxs primary_text">
                   PAID
                 </p>
               </td>
@@ -193,13 +193,13 @@ const Report = () => {
             <tr>
               <td className="id_and_name">
                 <div>
-                  <p className="row_id typography_content_xxs">1</p>
+                  <p className="row_id poppin_bold typography_content_xxs">1</p>
                 </div>
                 <div className="row_name_and_email">
-                  <p className="row_name primary_text typography_content_xxs primary_text_3">
+                  <p className="row_name primary_text poppin_regular typography_content_xxs primary_text_3">
                     Kamikazi Lilian
                   </p>
-                  <p className="row_email primary_text typography_content_xxss primary_text_2">
+                  <p className="row_email primary_text poppin_regular typography_content_xxss primary_text_2">
                     kamikaziLili@gmail.com
                   </p>
                 </div>
@@ -207,19 +207,19 @@ const Report = () => {
 
               <td className="company_info">
                 <img src={settings} alt="" className="row_image" />
-                <p className="row_company_name typography_content_xxs primary_text">
+                <p className="row_company_name poppin_regular typography_content_xxs primary_text">
                   MTN Rwanda
                 </p>
               </td>
 
               <td>
-                <p className="row_date_joined typography_content_xxs primary_text_2">
+                <p className="row_date_joined poppin_regular typography_content_xxs primary_text_2">
                   1st JUNE 2021
                 </p>
               </td>
 
               <td>
-                <p className="row_service_fee typography_content_xxs primary_text">
+                <p className="row_service_fee poppin_bold typography_content_xxs primary_text">
                   PAID
                 </p>
               </td>

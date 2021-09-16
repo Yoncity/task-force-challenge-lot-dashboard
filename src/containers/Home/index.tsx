@@ -28,52 +28,62 @@ const Home = () => {
   return (
     <Layout activeMenu="Home" headerTitle="Overview">
       <div className="home_container">
-        <p className="home_container__title typography_title_h3">
-          Welcome to Lot,
+        <p className="home_container__title typography_title_h3 euclid_regular">
+          Welcome to <span className="euclid_medium">Lot,</span>
         </p>
         <div className="home_container__graph">
           <LineChart width={700} height={400} data={data}>
             <XAxis dataKey="name" />
             <YAxis />
             <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
-            <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-            <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
+            <Line
+              type="monotone"
+              dataKey="uv"
+              stroke="#1FC933"
+              strokeWidth="3"
+            />
+            <Line
+              type="monotone"
+              dataKey="pv"
+              stroke="#82ca9d"
+              strokeWidth="3"
+            />
           </LineChart>
         </div>
 
         <div className="home_container__summary">
           <div className="home_container__summary__card background_primary white_text">
-            <div className="home_container__summary__card__title typography_content_medium">
+            <div className="home_container__summary__card__title typography_content_medium euclid_bold">
               EMPLOYERS
             </div>
-            <div className="home_container__summary__card__value typography_title_h1 secondary_text">
+            <div className="home_container__summary__card__value typography_title_h1 montserrat_medium secondary_text">
               36
             </div>
-            <div className="home_container__summary__card__description white_text typography_content_xs">
+            <div className="home_container__summary__card__description white_text typography_content_xs euclid_regular">
               Employers finds their employees through us
             </div>
           </div>
 
           <div className="home_container__summary__card background_primary white_text">
-            <div className="home_container__summary__card__title typography_content_medium">
+            <div className="home_container__summary__card__title typography_content_medium euclid_bold">
               JOBS
             </div>
-            <div className="home_container__summary__card__value typography_title_h1 secondary_text">
+            <div className="home_container__summary__card__value typography_title_h1 secondary_text montserrat_medium">
               3,690
             </div>
-            <div className="home_container__summary__card__description white_text typography_content_xs">
+            <div className="home_container__summary__card__description white_text typography_content_xs euclid_regular">
               Employers finds their employees through us
             </div>
           </div>
 
           <div className="home_container__summary__card background_primary white_text">
-            <div className="home_container__summary__card__title typography_content_medium">
+            <div className="home_container__summary__card__title typography_content_medium euclid_bold">
               ONGOING PROJECTS
             </div>
-            <div className="home_container__summary__card__value typography_title_h1 secondary_text">
+            <div className="home_container__summary__card__value typography_title_h1 secondary_text montserrat_medium">
               36
             </div>
-            <div className="home_container__summary__card__description white_text typography_content_xs">
+            <div className="home_container__summary__card__description white_text typography_content_xs euclid_regular">
               Employers finds their employees through us
             </div>
           </div>

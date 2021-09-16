@@ -87,6 +87,9 @@
         &__signin {
           text-align: center;
           margin-top: 15px;
+          span {
+            cursor: pointer;
+          }
         }
         &__forgot_password {
           margin-bottom: 40px;

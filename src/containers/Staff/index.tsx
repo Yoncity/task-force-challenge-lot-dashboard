@@ -3,7 +3,13 @@ import ReactStars from "react-rating-stars-component";
 import "./index.scss";
 import Layout from "../../components/common/Layout";
 import mtn from "../../assets/icons/mtn_round.png";
-import settings from "../../assets/icons/settings.svg";
+import bk from "../../assets/icons/bk.png";
+import kcb from "../../assets/icons/kcb.png";
+import equity from "../../assets/icons/equity-bank-logo.png";
+import userProfileIcon from "../../assets/icons/user_profile.svg";
+import camera from "../../assets/icons/camera.svg";
+import edit from "../../assets/icons/edit.svg";
+import deleteIcon from "../../assets/icons/delete.svg";
 import Modal from "../../components/common/Modal";
 
 const Staff = () => {
@@ -12,32 +18,119 @@ const Staff = () => {
 
   const employers = () => {
     return (
-      <div className="staff_container__body__card card">
-        <img src={mtn} alt="" className="staff_container__body__card__icon" />
-        <p className="staff_container__body__card__title typography_content_medium">
-          MTN Rwanda
-        </p>
+      <>
+        <div className="staff_container__body__card card">
+          <img src={mtn} alt="" className="staff_container__body__card__icon" />
+          <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
+            MTN Rwanda
+          </p>
 
-        <div className="staff_container__body__card__rating">
-          <ReactStars count={5} size={24} activeColor="#ffd700" />
+          <div className="staff_container__body__card__rating">
+            <ReactStars count={5} size={24} activeColor="#ffd700" />
+          </div>
+
+          <p className="staff_container__body__card__rate_button poppin_semi_bold typography_content_large_3 primary_text">
+            Rate
+          </p>
+          <div className="staff_container__body__card__actions">
+            <img
+              src={edit}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+            <img
+              src={deleteIcon}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+          </div>
         </div>
 
-        <p className="staff_container__body__card__rate_button typography_content_large_3 primary_text">
-          Rate
-        </p>
-        <div className="staff_container__body__card__actions">
-          <img
-            src={settings}
-            alt=""
-            className="staff_container__body__card__actions__icon"
-          />
-          <img
-            src={settings}
-            alt=""
-            className="staff_container__body__card__actions__icon"
-          />
+        <div className="staff_container__body__card card">
+          <img src={bk} alt="" className="staff_container__body__card__icon" />
+          <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
+            Bank of kigali
+          </p>
+
+          <div className="staff_container__body__card__rating">
+            <ReactStars count={5} size={24} activeColor="#ffd700" />
+          </div>
+
+          <p className="staff_container__body__card__rate_button poppin_semi_bold typography_content_large_3 primary_text">
+            Rate
+          </p>
+          <div className="staff_container__body__card__actions">
+            <img
+              src={edit}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+            <img
+              src={deleteIcon}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+          </div>
         </div>
-      </div>
+
+        <div className="staff_container__body__card card">
+          <img src={kcb} alt="" className="staff_container__body__card__icon" />
+          <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
+            KCB Bank
+          </p>
+
+          <div className="staff_container__body__card__rating">
+            <ReactStars count={5} size={24} activeColor="#ffd700" />
+          </div>
+
+          <p className="staff_container__body__card__rate_button poppin_semi_bold typography_content_large_3 primary_text">
+            Rate
+          </p>
+          <div className="staff_container__body__card__actions">
+            <img
+              src={edit}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+            <img
+              src={deleteIcon}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+          </div>
+        </div>
+
+        <div className="staff_container__body__card card">
+          <img
+            src={equity}
+            alt=""
+            className="staff_container__body__card__icon"
+          />
+          <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
+            Equity Rwanda
+          </p>
+
+          <div className="staff_container__body__card__rating">
+            <ReactStars count={5} size={24} activeColor="#ffd700" />
+          </div>
+
+          <p className="staff_container__body__card__rate_button poppin_semi_bold typography_content_large_3 primary_text">
+            Rate
+          </p>
+          <div className="staff_container__body__card__actions">
+            <img
+              src={edit}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+            <img
+              src={deleteIcon}
+              alt=""
+              className="staff_container__body__card__actions__icon"
+            />
+          </div>
+        </div>
+      </>
     );
   };
 
@@ -45,21 +138,21 @@ const Staff = () => {
     return (
       <div className="staff_container__body__card card">
         <img src={mtn} alt="" className="staff_container__body__card__icon" />
-        <p className="staff_container__body__card__title_employee typography_content_medium">
+        <p className="staff_container__body__card__title black_text_3 poppin_medium typography_content_medium">
           Kamikazi Lilian
         </p>
 
-        <p className="staff_container__body__card__rate_button_employee typography_content_large_3 primary_text">
+        <p className="staff_container__body__card__rate_button_employee poppin_semi_bold typography_content_large_3 primary_text">
           Rate
         </p>
         <div className="staff_container__body__card__actions">
           <img
-            src={settings}
+            src={edit}
             alt=""
             className="staff_container__body__card__actions__icon"
           />
           <img
-            src={settings}
+            src={deleteIcon}
             alt=""
             className="staff_container__body__card__actions__icon"
           />
@@ -75,7 +168,7 @@ const Staff = () => {
           <div className="staff_container__header__tabs">
             <p
               onClick={() => setTab(0)}
-              className={`typography_content_medium_2 primary_text_1 ${
+              className={`typography_content_medium_2 poppin_medium primary_text_1 ${
                 tab === 0 ? "background_white" : ""
               }`}
             >
@@ -83,7 +176,7 @@ const Staff = () => {
             </p>
             <p
               onClick={() => setTab(1)}
-              className={`typography_content_medium_2 primary_text_1 ${
+              className={`typography_content_medium_2 poppin_medium primary_text_1 ${
                 tab === 1 ? "background_white" : ""
               }`}
             >
@@ -91,7 +184,7 @@ const Staff = () => {
             </p>
           </div>
           <div
-            className="staff_container__header__add_employee button_filled smaller white_text"
+            className="staff_container__header__add_employee button_filled smaller poppin_semi_bold white_text"
             onClick={() => setShowModal(true)}
           >
             ADD
@@ -109,17 +202,21 @@ const Staff = () => {
       >
         <div className="modal">
           <div className="add_employee_image_container">
-            <img src={settings} className="employee_image" />
-            <img src={settings} className="add_image" />
+            <img src={userProfileIcon} className="employee_image" />
+            <img src={camera} className="add_image" />
           </div>
 
-          <input type="text" placeholder="Name of the company" />
-          <select>
+          <input
+            type="text"
+            placeholder="Name of the company"
+            className="poppin_regular"
+          />
+          <select className="poppin_regular">
             <option>Size of the company</option>
             <option>Small company (10 - 100)</option>
             <option>Medium company (100 - 1000)</option>
           </select>
-          <div className="button_filled larger white_text action_button">
+          <div className="button_filled larger euclid_semi_bold white_text action_button">
             ADD
           </div>
         </div>

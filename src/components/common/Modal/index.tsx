@@ -38,7 +38,7 @@ const Modal: React.FC<Props> = ({
       <div className="modal-main-container">
         <div className="modal-container" ref={ref}>
           <div className="modal-header-container">
-            <p className="modal-header-title typography_content_large_2 primary_text">
+            <p className="modal-header-title typography_content_large_2 euclid_semi_bold primary_text">
               {header}
             </p>
             <span

@@ -5,7 +5,10 @@ const Passwordfield = ({ label, inputName }) => {
   const [toggleShow, setToggleShow] = useState(false);
   return (
     <div className="textfield_container">
-      <label className="typography_content_medium" htmlFor={inputName}>
+      <label
+        className="typography_content_medium poppin_regular"
+        htmlFor={inputName}
+      >
         {label}
       </label>
       <div className="textfield_container__password_container">
@@ -16,7 +19,9 @@ const Passwordfield = ({ label, inputName }) => {
         />
         <span
           onClick={() => setToggleShow(!toggleShow)}
-          className={`typography_content_xxs ${toggleShow && "show_password"}`}
+          className={`typography_content_xxs poppin_regular ${
+            toggleShow && "show_password"
+          }`}
         >
           show
         </span>
