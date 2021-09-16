@@ -3,6 +3,8 @@ import Layout from "../../components/common/Layout";
 import people from "../../assets/icons/people.svg";
 import apartment from "../../assets/icons/apartment.svg";
 import more_menu from "../../assets/icons/more_menu.svg";
+import Calendar from "react-calendar";
+// import "react-calendar/dist/Calendar.css";
 
 const Appointments = () => {
   return (
@@ -11,7 +13,9 @@ const Appointments = () => {
         <p className="appointment_container__title typography_title_h3 euclid_regular">
           Calendar
         </p>
-        <div className="appointment_container__calendar"></div>
+        <div className="appointment_container__calendar">
+          <Calendar />
+        </div>
 
         <div className="appointment_container__summary">
           <p className="appointment_container__summary__title typography_title_h3 euclid_regular">
